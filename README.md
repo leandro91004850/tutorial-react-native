@@ -7,6 +7,7 @@ Informações sobre o curso de react native e passo a passo: http://leandrocorp.
 * Documentação oficial: https://facebook.github.io/react-native/
 * Documentação expo: https://docs.expo.io/versions/latest/
 * Passo a passo inicial: https://docs.expo.dev/get-started/installation/#requirements
+* site para cores css: https://cssgradient.io/
 ## Dica usar versão do node LTS atualizada para evitar problemas de compatibilidade
 
 ## gerando aplicativo com expo:
