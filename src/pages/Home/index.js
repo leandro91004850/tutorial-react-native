@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Header nome= "Leandro de Almeida"/> 
-      <Balance />
+      <Balance saldo="3.500.00" gasto="-1.581.10"/>
     </View>
   );
 }
