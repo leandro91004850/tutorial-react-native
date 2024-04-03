@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     simboloMoeda:{
         fontSize: 10,
         color: '#000',
+        marginRight: 5, // Add this line to set the spacing
     },
 
     saldo:{
