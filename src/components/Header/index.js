@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text, StatusBar, TouchableOpacity} from "react-native";
 import {Feather} from '@expo/vector-icons';
 
-const statusbarHeigth = StatusBar.currentHeight ? StatusBar.currentHeight  + 22 : 60;
+const statusbarHeigth = StatusBar.currentHeight ? StatusBar.currentHeight  + 22 : 65;
 
 export default function Header({nome}) {
   return (
@@ -25,9 +25,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingStart: 16,
         paddingEnd: 16,
-        paddingBottom: 10,
-        borderBottomEndRadius: 20,
-        borderBottomStartRadius: 20,
+        paddingBottom: 30,
+        paddingTop: 50,
+        //borderBottomEndRadius: 20,
+        //borderBottomStartRadius: 20,
         },
         content: {
             flex: 1,
