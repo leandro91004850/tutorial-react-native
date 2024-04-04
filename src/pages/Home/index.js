@@ -2,6 +2,7 @@ import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
 import Header from "../../components/Header";
 import Balance from "../../components/Balance";
 import Movements from "../../components/Movements";
+import Actions from "../../components/Actions";
 
 // receber depois de uma chamada api
 const list =[
@@ -40,6 +41,7 @@ export default function Home() {
     <View style={styles.container}>
       <Header nome= "Leandro de Almeida"/> 
       <Balance saldo="3.500.00" gasto="-1.581.10"/>
+      <Actions />
       <Text style={styles.title}>Últimas movimentações</Text>
       <FlatList
         //horizontal
@@ -58,6 +60,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   }, 
+
   title: {
     fontSize: 20,
     fontWeight: 'bold',
