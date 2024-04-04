@@ -1,18 +1,50 @@
 import React from "react";
 import { View, StyleSheet, Text, StatusBar, TouchableOpacity} from "react-native";
 import {Feather} from '@expo/vector-icons';
+import { MotiView, MotiText} from "moti";
 
 const statusbarHeigth = StatusBar.currentHeight ? StatusBar.currentHeight  + 22 : 65;
 
 export default function Header({nome}) {
   return (
     <View style={styles.container}>
-        <View style={styles.content}>
-            <Text style= {styles.username}>{nome}</Text>
+        <MotiView 
+            style={styles.content}
+            from={{
+                opacity: 0,
+                translateY: -150,
+            }}
+            animate={{
+                opacity: 1,
+                translateY: 0,
+            }}
+            transition={{
+                type: 'spring',
+                duration: 2000,
+                delay: 300,
+            }}
+            >
+            <MotiText 
+                style= {styles.username}
+                from={{
+                    translateX: -300,
+                }}
+                animate={{
+                    translateX: 0,
+                }}
+                transition={{
+                    type: 'timing',
+                    duration: 800,
+                    delay: 800,
+                }}
+                >
+                {nome}
+            </MotiText>
             <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser}>
                 <Feather name="user" size={27} color="#000"/>
             </TouchableOpacity>    
-        </View>
+
+        </MotiView>
     </View>
   )
 }
