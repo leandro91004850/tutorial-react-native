@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingStart: 18,
         paddingEnd: 18,
+        paddingTop: 22,
+        paddingBottom: 32,
         marginTop: -20,
         marginStart: 14,
         marginEnd: 14,
         borderRadius: 4,
-        paddingTop: 22,
-        paddingBottom: 22,
         zIndex: 99, // Para sobrepor o header
     },
 

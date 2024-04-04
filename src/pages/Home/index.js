@@ -1,4 +1,4 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, ScrollView, StyleSheet, Text, View } from "react-native";
 import Header from "../../components/Header";
 import Balance from "../../components/Balance";
 import Movements from "../../components/Movements";
@@ -42,6 +42,7 @@ export default function Home() {
       <Balance saldo="3.500.00" gasto="-1.581.10"/>
       <Text style={styles.title}>Últimas movimentações</Text>
       <FlatList
+        //horizontal
         style={styles.list}
         data={list}
         keyExtractor={(item) => String(item.id)}
@@ -68,6 +69,7 @@ const styles = StyleSheet.create({
   list: {
     marginStart: 14,
     marginEnd: 14,
+  
   },
 
 });
