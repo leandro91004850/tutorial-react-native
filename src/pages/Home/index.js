@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import Header from "../../components/Header";
 import Balance from "../../components/Balance";
+import Movements from "../../components/Movements";
 
 // receber depois de uma chamada api
 const list =[
@@ -40,6 +41,13 @@ export default function Home() {
       <Header nome= "Leandro de Almeida"/> 
       <Balance saldo="3.500.00" gasto="-1.581.10"/>
       <Text style={styles.title}>Últimas movimentações</Text>
+      <FlatList
+        style={styles.list}
+        data={list}
+        keyExtractor={(item) => String(item.id)}
+        showsVerticalScrollIndicator={false}
+        renderItem={({item}) => <Movements data={item} />}
+        />
     </View>
   );
 }
@@ -56,4 +64,9 @@ const styles = StyleSheet.create({
     marginRight: 14,
     marginTop: 14,
   },
+
+  list: {
+    marginStart: 14,
+    marginEnd: 14,
+  }
 });
