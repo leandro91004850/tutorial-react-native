@@ -10,7 +10,7 @@ const list =[
     label: 'Conta de luz',
     value: '200,00',
     date: '10/11/2020',
-    type:1
+    type:0
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         renderItem={({item}) => <Movements data={item} />}
         />
-    </View>
+    </View> 
   );
 }
 
@@ -68,5 +68,6 @@ const styles = StyleSheet.create({
   list: {
     marginStart: 14,
     marginEnd: 14,
-  }
+  },
+
 });
