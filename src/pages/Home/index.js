@@ -9,28 +9,28 @@ const list =[
     id: 1,
     label: 'Conta de luz',
     value: '200,00',
-    date: '10/10/2020',
+    date: '10/11/2020',
     type:1
   },
   {
     id: 2,
     label: 'Conta de água',
     value: '100,00',
-    date: '10/10/2020',
+    date: '10/12/2020',
     type:1
   },
   {
     id: 3,
     label: 'Conta de internet',
     value: '100,00',
-    date: '10/10/2020',
+    date: '10/01/2021',
     type:1
   },
   {
     id: 4,
     label: 'Conta de telefone',
     value: '100,00',
-    date: '10/10/2020',
+    date: '10/02/2021',
     type:1
   }  
 ]
